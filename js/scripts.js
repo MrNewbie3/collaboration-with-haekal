@@ -51,9 +51,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
 const invit = document.querySelector(".invitationButton");
 const head = document.querySelector("header");
 
-invit.addEventListener("click", (e) => {
-  e.preventDefault();
-  head.classList.toggle("absolute");
-  document.body.classList.toggle("fixed");
-  head.classList.toggle("move");
-});
+// invit.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   head.classList.toggle("absolute");
+//   document.body.classList.toggle("fixed");
+//   head.classList.toggle("move");
+// });
