@@ -14,8 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet" href="css/styles.css" />
+
   </head>
-  <body id="page-top" class="">
+  <body id="page-top" class="fixed">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container px-4 px-lg-5">
@@ -26,9 +27,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Groom & Bride</a></li>
-            <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+            <li class="nav-item aboutNav"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item brideNav"><a class="nav-link" href="#bride">Groom & Bride</a></li>
+            <li class="nav-item locationNav"><a class="nav-link" href="#location">Location</a></li>
+            <li class="nav-item contactNav"><a class="nav-link" href="#signup">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -43,7 +45,7 @@
               “Dan segala sesuatu Kami Ciptakan <br />
               Berpasang-pasangan supaya kamu mengingat kebesaran Allah,”<br />(QS Az-Zariyat: 49).
             </h2>
-            <a class="btn btn-primary invitationButton" href="">Buka Undangan Digital</a>
+            <a class="btn btn-primary invitationButton" href="">Buka Undangan</a>
           </div>
         </div>
       </div>
@@ -98,7 +100,7 @@
     </section>
     <br />
   
-    <section class="salam text-center" id="Groom & Bride ">
+    <section class="salam text-center" id="bride">
       <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-lg-8"></div>
         <div class="featured-text text-center text-lg-left">
@@ -121,7 +123,7 @@
                   <p class="mb-0 text-white-50 fs-5">Januar Ananta Dinar 
                     Pratama. S.T., M.Sc 
                     <br>
-                    atau yang lebih akrab di sapa Janu . Putra pertama dari Bapak Ir. H. Machfuds & Ibu Hj. Nuraini Rahmawati S.Ag</p>
+                    atau yang lebih akrab di sapa Janu . <br>Putra pertama dari Bapak Ir. H. Machfuds & Ibu Hj. Nuraini Rahmawati S.Ag</p>
                   <hr class="d-none d-lg-block mb-0 ms-0" />
                 </div>
               </div>
@@ -146,14 +148,14 @@
       </div>
       <!-- About Section Button-->
       <div class="text-center mt-4">
-        <br><br><a class="btn btn-xl btn-outline-light" href="https://issuu.com/janantadp/docs/_ngunduh_mantu_-_januar_denvi" target="blank">
+        <br><br><a class="btn btn-xl btn-outline-light btn-light" href="https://issuu.com/janantadp/docs/_ngunduh_mantu_-_januar_denvi" target="blank">
           <i class="fas fa-download me-2"></i>
             Buka Undangan digital
         </a>
       </div>
     </section>
     <!-- Signup-->
-    <section class="signup-section" id="signup">
+    <section class="signup-section" id="hmmm">
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
           <div class="col-md-10 col-lg-8 mx-auto text-center reception-date text-light ">
@@ -165,16 +167,16 @@
             <Br>
             <br>
             <div class="row justify-content-center icons">      
-              <div class="col-sm">
+              <div class="col-sm mt-5">
                 <i class="fa-solid fa-mask-face text-light" style="font-size:50px"></i>
               <br><small class="text-light">Use Medical Mask</small></div>
-              <div class="col-sm">
+              <div class="col-sm mt-5">
                 <i class="fa-solid fa-handshake-slash text-light" style="font-size: 50px;"></i>
               <br><small class="text-light">Avoid Physical Touch</small></div>
-              <div class="col-sm">
+              <div class="col-sm mt-5">
                 <i class="fa-solid fa-hand-holding-medical text-light" style="font-size: 50px;"></i>
               <br><small class="text-light">Use Hand Sanitizer</small></div>
-             <div class="col-sm">
+             <div class="col-sm mt-5">
               <i class="fa-solid fa-hands-bubbles text-light" style="font-size:50px"></i>
               <br><small class="text-light">Wash Hand</small></div>
             </div>
@@ -187,7 +189,7 @@
     <section class="contact-section bg-black">
       <div class="container px-4 px-lg-5">
         <div class="row justify-content-center mb-5 bg-light rounded-3 ">
-          <div class="col-lg-6 maps-iframe justify-content-center ">
+          <div class="col-lg-6 maps-iframe justify-content-center " id="location">
             <h1 class="text-center mt-3">
               Paseban Sena 
             </h1>
@@ -235,7 +237,7 @@
                   </div>
                 </div>
                 <div class="row justify-content-center mt-3">
-                  <div class="col-3 text-center">
+                  <div class="col-3 justify-content-start">
                     <button type="submit" class="btn btn-white mb-3 btn-lg">Submit</button>
                   </div>
                 </div>
@@ -280,7 +282,7 @@
         
       </div>
         </div>
-        <div class="social d-flex justify-content-center">
+        <div class="social d-flex justify-content-center" id="signup">
           <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
           <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
           <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
@@ -293,6 +295,7 @@
     <script src="https://kit.fontawesome.com/b8dbbcbd36.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->

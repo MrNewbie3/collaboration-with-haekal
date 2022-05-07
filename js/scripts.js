@@ -51,9 +51,29 @@ window.addEventListener("DOMContentLoaded", (event) => {
 const invit = document.querySelector(".invitationButton");
 const head = document.querySelector("header");
 
-// invit.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   head.classList.toggle("absolute");
-//   document.body.classList.toggle("fixed");
-//   head.classList.toggle("move");
-// });
+invit.addEventListener("click", (e) => {
+  e.preventDefault();
+  head.classList.toggle("absolute");
+  document.body.classList.toggle("fixed");
+  head.classList.toggle("move");
+});
+$(".aboutNav").on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: $("#about").offset().top - 40 }, 500);
+});
+$(".brideNav").on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: $("#bride").offset().top + 120 }, 500);
+});
+$(".locationNav").on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: $("#location").offset().top - 80 }, 500);
+});
+$(".contactNav").on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: $("#signup").offset().top - 100 }, 500);
+});
+
+window.addEventListener("scroll", (e) => {
+  console.log(window.pageYOffset);
+});

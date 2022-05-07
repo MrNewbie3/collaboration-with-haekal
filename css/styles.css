@@ -12965,4 +12965,6 @@ iframe{
 .bioname{
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
+}.btn.btn-xl.btn-outline-light{
+  color: black;
 }
