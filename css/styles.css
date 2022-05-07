@@ -130,7 +130,6 @@ body {
  /* font-family: 'Dancing Script', cursive; */
  /* font-family: 'Courgette', cursive; */
  /* font-family: 'Dancing Script', cursive; */
- font-family: 'Poppins', sans-serif;
  color: white;
  background: #F2F2F2;
  margin: 0 !important;
@@ -12928,4 +12927,15 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+.row.justify-content-center.icons{
+  margin-top: 120px;
+}
+
+.fs-7{
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+iframe{
+  width: 100%;
 }
