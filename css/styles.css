@@ -12939,3 +12939,24 @@ body {
 iframe{
   width: 100%;
 }
+
+.absolute{
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+}.fixed{
+  overflow-y: hidden;
+}.move{
+  animation: scrollTop 1000ms forwards ;
+}
+@keyframes scrollTop {
+  from{
+    transform: translateY(0);
+  }to{
+    transform: translateY(-800px)
+  }
+}.masthead{
+  z-index: 99999;
+}.projects-section.bg-light{
+  padding-top: 60px;
+}

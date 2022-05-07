@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     if (!navbarCollapsible) {
       return;
     }
-    if (window.scrollY === 0) {
+    if (window.scrollY === 10) {
       navbarCollapsible.classList.remove("navbar-shrink");
     } else {
       navbarCollapsible.classList.add("navbar-shrink");
@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   if (mainNav) {
     new bootstrap.ScrollSpy(document.body, {
       target: "#mainNav",
-      offset: 74,
+      offset: 174,
     });
   }
 
@@ -46,4 +46,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   });
+});
+
+const invit = document.querySelector(".invitationButton");
+const head = document.querySelector("header");
+
+invit.addEventListener("click", (e) => {
+  e.preventDefault();
+  head.classList.toggle("absolute");
+  document.body.classList.toggle("fixed");
+  head.classList.toggle("move");
 });
