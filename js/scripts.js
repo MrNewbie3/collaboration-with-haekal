@@ -54,21 +54,40 @@ const body = document.querySelector("body");
 const syukur = document.querySelector(".pujaSyukur");
 const imageAtas = document.querySelector(".imageAtas");
 const akad = document.querySelector(".akadNikah");
-// invit.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   head.classList.toggle("absolute");
-//   document.body.classList.toggle("fixed");
-//   head.classList.toggle("move");
-//   syukur.classList.add("animated-left");
-//   imageAtas.classList.add("slideRight");
-// });
+invit.addEventListener("click", (e) => {
+  e.preventDefault();
+  head.classList.toggle("absolute");
+  document.body.classList.toggle("fixed");
+  head.classList.toggle("move");
+  syukur.classList.add("animated-left");
+  imageAtas.classList.add("slideRight");
+  innerLogo.classList.toggle("play");
+  iconPlay.classList.remove("d-none");
+  if (innerLogo.classList.contains("play")) {
+    music.play();
+    iconPlay.classList.toggle("zommin");
+  } else {
+    music.pause();
+    iconPlay.classList.toggle("zommin");
+  }
+  iconPlay.addEventListener("click", () => {
+    innerLogo.classList.toggle("play");
+    if (innerLogo.classList.contains("play")) {
+      music.play();
+      iconPlay.classList.toggle("zommin");
+    } else {
+      music.pause();
+      iconPlay.classList.toggle("zommin");
+    }
+  });
+});
 $(".aboutNav").on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: $("#about").offset().top - 40 }, 500);
 });
 $(".brideNav").on("click", function (e) {
   e.preventDefault();
-  $("html, body").animate({ scrollTop: $("#bride").offset().top + 120 }, 500);
+  $("html, body").animate({ scrollTop: $("#bride").offset().top }, 500);
 });
 $(".locationNav").on("click", function (e) {
   e.preventDefault();
@@ -76,7 +95,7 @@ $(".locationNav").on("click", function (e) {
 });
 $(".contactNav").on("click", function (e) {
   e.preventDefault();
-  $("html, body").animate({ scrollTop: $("#signup").offset().top - 100 }, 500);
+  $("html, body").animate({ scrollTop: $(".contact-container").offset().top - 100 }, 500);
 });
 window.addEventListener("scroll", (e) => {
   let height = window.pageYOffset;
@@ -87,3 +106,29 @@ window.addEventListener("scroll", (e) => {
     akad.classList.remove("scrollUp");
   }
 });
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbxt1GswWQzoEfiCkokfeB2IRbRAqJeMgG_2dtXTsLcbGkfZYXMKD47vDpKJKdrwGca5tw/exec";
+const form = document.forms["submit-to-google-sheet"];
+const kirim = document.querySelector(".btn-kirim");
+const loading = document.querySelector(".btn-loading");
+const myAlert = document.querySelector(".myAlert");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  loading.classList.toggle("d-none");
+  kirim.classList.toggle("d-none");
+
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      console.log("Success!", response);
+      loading.classList.toggle("d-none");
+      kirim.classList.toggle("d-none");
+      myAlert.classList.toggle("d-none");
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+
+const music = document.querySelector("#mySong");
+const iconPlay = document.querySelector(".play-button");
+const innerLogo = document.querySelector(".buttonMusic");

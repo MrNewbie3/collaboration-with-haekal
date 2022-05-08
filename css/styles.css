@@ -1,8 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
-/*!
-* Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');* Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
 * Copyright 2013-2022 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
 */
@@ -4597,8 +4596,8 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #0e525e;;
+  border-color: #0e525e;;
 }
 .btn-outline-light:hover {
   color: #000;
@@ -12951,7 +12950,7 @@ iframe{
 .absolute{
   position: absolute;
   top: 0;
-  z-index: 10000;
+  z-index: 1000000000;
 }.fixed{
   overflow-y: hidden;
 }.move{
@@ -13022,5 +13021,59 @@ iframe{
 }
 .date.atas{
   font-family: 'Dancing Script', cursive;
-  font-size: 25px;
+  font-size: 33px;
+}.akadText{
+  font-family: 'Dancing Script', cursive;
+  font-size: 45px;
+}
+footer{
+  padding-top: 30px;
+}.pujapuji, .desc{
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 500;
+}.schedule{
+  font-size: 20px;
+}.akad-nikah{
+  padding-top: 90px;
+}.desc{
+  height: auto;
+}.kehormatan{
+  height: auto;
+}.play-button{
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: darkcyan;
+  z-index: 9999999;
+  padding: 20px;
+  bottom: 5%;
+  right: 5%;
+}
+@keyframes opacity{
+  from {
+    opacity:0}
+    to{
+      opacity:1;
+    }
+}
+.opacity{
+  animation: opacity 5s forwards ;
+}
+
+@keyframes zommin{
+  0%{
+    transform: rotateZ(0deg);
+ 
+  }100%{
+    
+    transform: rotateZ(360deg);
+  }
+}
+.zommin{
+  animation: zommin infinite 5s forwards ;
+}.buttonMusic:hover{
+  cursor: pointer;
+}
+:-webkit-scrollbar {
+  display: none;
 }

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/styles.css" />
 
   </head>
-  <body id="page-top" class="">
+  <body id="page-top" class="fixed">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container px-4 px-lg-5">
@@ -29,13 +29,14 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item aboutNav"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item brideNav"><a class="nav-link" href="#bride">Groom & Bride</a></li>
+            <li class="nav-item locationNav"><a class="nav-link" href="#location">Location</a></li>
             <li class="nav-item contactNav"><a class="nav-link" href="#signup">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead absolute move">
+    <header class="masthead">
       <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
           <div class="text-center">
@@ -64,15 +65,16 @@
           <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0 imageAtas" src="assets/img/janu.denvi.jpg" alt="..." /></div>
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left pujaSyukur ">
-              <p class="text-black-50">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan resepsi Ngunduh Mantu putra-putri kami pada:</p>
-              <h5 class="date atas">Minggu, 15 mei 2022</h5>
-              <p class="day">12.00-13.00</p>
-              <p class="location">Gedung Pasebahan Sena</p>
+              <p class="text-black-50 pujapuji">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan resepsi Ngunduh Mantu putra-putri kami pada:</p>
+              <div class="schedule">
+                <h5 class="date atas">Minggu, 15 mei 2022</h5>
+                <p class="day-time">12.00-13.00</p>
+                <p class="location">Gedung Pasebahan Sena</p>
+                <br />
+                <p class="location-building">Kota Probolinggo</p>
+              </div>
               <br />
-              <p class="location-building">Kota Probolinggo</p>
-              <br />
-              <h4>J & D</h4>
-              <p class="text-black-50 mb-0">
+              <p class="text-black-50 mb-3 desc">
                 “Apa yang lebih besar bagi dua jiwa manusia, daripada merasakan bahwa mereka bersatu seumur hidup—untuk saling menguatkan dalam semua pekerjaan, untuk saling bersandar dalam semua kesedihan, untuk saling melayani dalam
                 kenangan sunyi yang tak terkatakan di saat perpisahan terakhir”
               </p>
@@ -82,7 +84,7 @@
     <!--Salam 2-->
     <!-- About-->
         <!-- Bride-->
-        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center " id="bride">
           <div class="col-lg-6"><img class="img-fluid" src="assets/img/Janu.jpg" alt="..." /></div>
           <div class="col-lg-6">
             <div class="bg-black text-center h-100 project">
@@ -101,7 +103,7 @@
         </div>
         <!-- Project Two Row-->
         <div class="row gx-0 justify-content-center">
-          <div class="col-lg-6"><img class="img-fluid" src="assets/img/Denvi.jpg" alt="..." /></div>
+          <div class="col-lg-6 " ><img class="img-fluid" src="assets/img/Denvi.jpg" alt="..." /></div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
@@ -115,11 +117,11 @@
           </div>
         </div>
       </div>
-          <section class="about-section text-center img-akad mb-5" id="about">
+          <section class="about-section text-center img-akad mb-5 akad-nikah" id="about">
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 akadNikah">
-            <h2 class="text-white mb-4">Akad Nikah</h2>
+            <h2 class="text-white mb-4 akadText">Akad Nikah</h2>
             <p class="text-white-50">
               <strong>Telah dilaksanakan pada :</strong>
               Minggu, 20 Maret 2022 <br />
@@ -132,12 +134,12 @@
       </div>
     </section>
   
-    <section class="salam text-center" id="bride">
+    <section class="salam text-center" >
       <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-lg-8"></div>
         <div class="featured-text text-center text-lg-left">
               <p class="text-black-50 kehormatan">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i.<br>Berkenan hadir untuk memberikan do'a restu kepada kedua mempelai.
-                <br>Atas kehadiran dan do'a restunya, kami ucapkan terima kasih</p>
+                <br>Atas kehadiran dan do'a restunya, kami ucapkan terima kasih</p><br>
                 <h2 data-aos="fade-down" data-aos-delay="250" data-aos-duration="1000" class="aos-init aos-animate salam-penutup"> Wassalamu'alaikum Wr. Wb.</h2>
         <div class = "salaman-penutup">
           <br><br>
@@ -147,7 +149,7 @@
   </section>
       <!-- About Section Button-->
       <div class="text-center position-relative">
-        <br><br><a class="btn btn-xl btn-outline-light btn-light position-absolute top-50 start-50 translate-middle" href="https://issuu.com/janantadp/docs/_ngunduh_mantu_-_januar_denvi" target="blank">
+        <br><br><a class="btn btn-xl btn-outline-light  position-absolute top-50 start-50 translate-middle" href="https://issuu.com/janantadp/docs/_ngunduh_mantu_-_januar_denvi" target="blank">
           <i class="fas fa-download me-2"></i>
             Buka Undangan digital
         </a>
@@ -187,9 +189,9 @@
     <!-- Contact-->
     <section class="contact-section bg-black">
       <div class="container px-4 px-lg-5">
-        <div class="row justify-content-center mb-5 bg-light rounded-3 ">
-          <div class="col-lg-6 maps-iframe justify-content-center " id="location">
-            <h1 class="text-center mt-3">
+        <div class="row justify-content-center mb-5 bg-light rounded-3 mapsSection" id="location">
+          <div class="col-lg-6 maps-iframe justify-content-center " >
+            <h1 class="text-center mt-5">
               Paseban Sena 
             </h1>
             <p class="text-center fs-7">Jl. Suroyo No.50 -52, Sukabumi, Kec. Mayangan, Kota Probolinggo, Jawa Timur 67219</p>
@@ -197,54 +199,64 @@
             <div class="row justify-content-center my-3">
               <div class="col-8">
                 <a href="https://goo.gl/maps/cQ4d8g7yp6veB3Tq7" target="blank">
-                  <button type="button" class="btn btn-dark" style="width:100% ;">Location</button>
+                  <button type="button" class="btn btn-dark" style="width:100% ;">Lokasi</button>
                 </a>
               </div>
             </div>
           </div>
           <div class="col-lg-6 forms ">
-            <h1 class="text-center mt-3">
-              RSVP - Confirm Attendance
+            <h1 class="text-center mt-5">
+              RSVP - Konfirmasi Kehadiran
             </h1>
-            <form class="px-3 pt-3">
+            <form class="px-3 pt-3" name="submit-to-google-sheet">
               <div class="mb-0">
                 <div class="row justify-content-md-evenly mb-5">
                   <div class="col-6 ">
-                    <input type="text" class="form-control text-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" >
+                    <input type="text" class="form-control text-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama" name="nama">
                   </div>
                   <div class="col-6 ">
                      <div class="mb-0">
-                      <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                      <input type="email" name="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
                     </div>
                   </div>
                 </div>
                 <div class="row justify-content-md-evenly mb-5">
                   <div class="col-6 ">
-                    <input type="phone" class="form-control text-dark" id="exampleInputPhone1" aria-describedby="emailHelp" placeholder="Phone" >
+                    <input type="phone" name="hp" class="form-control text-dark" id="exampleInputPhone1" aria-describedby="emailHelp" placeholder="No. HP" >
                   </div>
                   <div class="col-6">
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Kata Sandi">
                   </div>
                 </div>
                 <div class="row justify-content-md-evenly mb-5">
                   <div class="col-12 text-center justify-content-center">
-                    <select id="inputState" class="form-select" class="text-center">
+                    <select id="inputState" class="form-select" class="text-center " name="kehadiran">
                       <option selected id="disabledSelect">Konfirmasi kehadiran</option>
                       <option>Hadir</option>
                       <option value="">Tidak hadir</option>
                     </select>
+                    <div class="alert alert-success alert-dismissible fade show mt-5 d-none myAlert" role="alert">
+                      <strong>Terimakasih!</strong> Konfirmasi anda sudah kami rekam
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                   </div>
                 </div>
                 <div class="row justify-content-center mt-3">
-                  <div class="col-3 justify-content-start">
-                    <button type="submit" class="btn btn-white mb-3 btn-lg">Submit</button>
+                  <div class="col-3 justify-content-center">
+                    <button type="submit" class="btn btn-white mb-3 btn-lg btn-kirim">Kirim</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-white btn-loading d-none" type="button" disabled>
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      Loading...
+                    </button>
                   </div>
                 </div>
               </div>
             </form>
           </div>
         </div>
-        <div class="container px-4 px-lg-5">
+        <div class="container px-4 px-lg-5 contact-container">
           <div class="row gx-4 gx-lg-5">
               <div class="col-md-4 mb-3 mb-md-0">
                   <div class="card py-4 h-100">
@@ -291,6 +303,15 @@
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; J&D</div></footer>
     <!-- Bootstrap core JS-->
+    <div class="music ">
+      <div class="play-button position-fixed d-none">
+        <i class="fa-solid fa-music text-black text-center position-absolute top-50 start-50 translate-middle buttonMusic" style="font-size: 20px;"></i>
+      </div>
+    </div>
+<audio id="mySong">
+  <source src="assets/y2mate.com - In My Life Instrumental Version.mp3">
+</audio>
+
     <script src="https://kit.fontawesome.com/b8dbbcbd36.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
