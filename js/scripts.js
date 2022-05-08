@@ -50,13 +50,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 const invit = document.querySelector(".invitationButton");
 const head = document.querySelector("header");
-
-invit.addEventListener("click", (e) => {
-  e.preventDefault();
-  head.classList.toggle("absolute");
-  document.body.classList.toggle("fixed");
-  head.classList.toggle("move");
-});
+const body = document.querySelector("body");
+const syukur = document.querySelector(".pujaSyukur");
+const imageAtas = document.querySelector(".imageAtas");
+const akad = document.querySelector(".akadNikah");
+// invit.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   head.classList.toggle("absolute");
+//   document.body.classList.toggle("fixed");
+//   head.classList.toggle("move");
+//   syukur.classList.add("animated-left");
+//   imageAtas.classList.add("slideRight");
+// });
 $(".aboutNav").on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: $("#about").offset().top - 40 }, 500);
@@ -73,7 +78,12 @@ $(".contactNav").on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: $("#signup").offset().top - 100 }, 500);
 });
-
 window.addEventListener("scroll", (e) => {
-  console.log(window.pageYOffset);
+  let height = window.pageYOffset;
+  console.log(height);
+  if (height >= 555 && height <= 1255) {
+    akad.classList.add("scrollUp");
+  } else if (height >= 1255) {
+    akad.classList.remove("scrollUp");
+  }
 });
